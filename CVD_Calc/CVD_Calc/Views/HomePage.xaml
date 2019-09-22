@@ -1,0 +1,476 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CVD_Calc.Views.HomePage"
+             xmlns:vm="clr-namespace:CVD_Calc.ViewModels"
+             Title="Home">
+    <ContentPage.BindingContext>
+        <vm:HomeViewModel />
+    </ContentPage.BindingContext>
+    <ContentPage.Content>
+        <StackLayout>
+            <Button Text="refresh the Cardiovascular risk" Clicked="Button_Clicked" />
+           
+           
+            <ScrollView>
+                <StackLayout>
+                    <Frame CornerRadius="20" BackgroundColor="White" IsVisible="True">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="120"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Label Grid.Column="1" TextColor="Black">
+                        <Label.FormattedText>
+                            <FormattedString>
+                                <FormattedString.Spans>
+                                    <Span Text="As " />
+                                    <Span Text="extreme temperature" TextColor="#ffc000" />
+                                    <Span Text=","/>
+                                    <Span Text=" air quality" TextColor="#00b050"/>
+                                    <Span Text=" and "/>
+                                    <Span Text="holiday season lifestyle" TextColor="#00b0f0"/>
+                                    <Span Text=" has dramatic effect on CVD risk. We strongly urge you to pay attention on the "/>
+                                    <Span Text="recommendation" TextColor="#a86ed4"/>
+                                    <Span Text=" from our app which may help you prevent a CVD related incident."/>
+
+                                </FormattedString.Spans>
+                            </FormattedString>
+                        </Label.FormattedText>
+                    </Label>
+                    <Image Source="home_pic2.png"  HorizontalOptions="Start" />
+
+                </Grid>
+            </Frame>
+                    
+                    <Frame x:Name="LowerCVD" CornerRadius="20" BackgroundColor="White" IsVisible="{Binding lowcvd}">
+                <StackLayout>
+                    <Label Grid.Column="1" TextColor="Black" FontSize="28">
+                        <Label.FormattedText>
+                            <FormattedString>
+                                <FormattedString.Spans>
+                                    <Span Text="C" TextColor="#ff0000"/>
+                                    <Span Text="o" TextColor="#ffc000"/>
+                                    <Span Text="n" TextColor="#ffff00"/>
+                                    <Span Text="g" TextColor="#00b050"/>
+                                    <Span Text="r" TextColor="#92d050"/>
+                                    <Span Text="a" TextColor="#00b0f0"/>
+                                    <Span Text="t" TextColor="#a86ed4"/>
+                                    <Span Text="u" TextColor="#ff0000"/>
+                                    <Span Text="l" TextColor="#ffc000"/>
+                                    <Span Text="a" TextColor="#ffff00" />
+                                    <Span Text="t" TextColor="#00b050" />
+                                    <Span Text="i" TextColor="#92d050"/>
+                                    <Span Text="o" TextColor="#00b0f0" />
+                                    <Span Text="n" TextColor="#a86ed4"/>
+                                    <Span Text="s" TextColor="#ff0000"/>
+                                    <Span Text="!" TextColor="#ffc000"/>
+                                </FormattedString.Spans>
+                            </FormattedString>
+                        </Label.FormattedText>
+                    </Label>
+                    <Label>
+                        <Label.FormattedText>
+                            <FormattedString>
+                                <FormattedString.Spans>
+                                    <Span Text="Your risk for getting cardiovascular diseases in the next 10 years is" TextColor="#000000"/>
+                                    <Span Text=" relatively low" TextColor="#00b050"/>
+                                    <Span Text="(" TextColor="#000000"/>
+                                            <Span x:Name="LowerCVD1" Text="{Binding scvd}" TextColor="#000000"/>
+                                    <Span Text="%). Keep up the good work!" TextColor="#000000"/>
+                                </FormattedString.Spans>
+                            </FormattedString>
+                        </Label.FormattedText>
+                    </Label>
+                </StackLayout>
+                    
+                    
+            </Frame>
+                    <Frame x:Name="BetterCVD" CornerRadius="20" BackgroundColor="White" IsVisible="{Binding bettercvd}">
+                <StackLayout>
+                    <Label Grid.Column="1" TextColor="Black" FontSize="28">
+                        <Label.FormattedText>
+                            <FormattedString>
+                                <FormattedString.Spans>
+                                    <Span Text="You " TextColor="#ff0000"/>
+                                    <Span Text="can " TextColor="#ffc000"/>
+                                    <Span Text="do " TextColor="#00b050"/>
+                                    <Span Text="better" TextColor="#0070c0"/>
+                                    
+                                </FormattedString.Spans>
+                            </FormattedString>
+                        </Label.FormattedText>
+                    </Label>
+                    <Label>
+                        <Label.FormattedText>
+                            <FormattedString>
+                                <FormattedString.Spans>
+                                    <Span Text="Your risk for getting cardiovascular diseases in the next 10 years is" TextColor="#000000"/>
+                                    <Span Text=" moderate" TextColor="#0070c0"/>
+                                    <Span Text="(" TextColor="#000000"/>
+                                            <Span x:Name="BetterCVD1" Text="{Binding scvd}" TextColor="#000000"/>
+                                    <Span Text="%)." TextColor="#000000"/>
+                                </FormattedString.Spans>
+                            </FormattedString>
+                        </Label.FormattedText>
+                    </Label>
+                    
+                    <Label>
+                        <Label.FormattedText>
+                            <FormattedString>
+                                <FormattedString.Spans>
+                                    <Span Text="You are what you eat! You are what you do! Choose a " TextColor="#000000"/>
+                                    <Span Text="better lifestyle" TextColor="#0070c0"/>
+                                    <Span Text=" for a healthier future." TextColor="#000000"/>
+                                </FormattedString.Spans>
+                            </FormattedString>
+                        </Label.FormattedText>
+                    </Label>
+                </StackLayout>
+
+
+            </Frame>
+                    <Frame x:Name="MediumCVD" BackgroundColor="White" CornerRadius="20" IsVisible="{Binding medcvd}">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="120"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Image Grid.Column="0" Source="home_pic3.png"  HorizontalOptions="Start" />
+                    <StackLayout Grid.Column="1">
+                        <Label >
+                            <Label.FormattedText>
+                                <FormattedString>
+                                    <FormattedString.Spans>
+                                        <Span Text="Your risk for getting cardiovascular diseases in the next 10 years is " TextColor="Black"/>
+                                        <Span Text="borderline high" TextColor="#ffcc00"/>
+                                        <Span Text="(" TextColor="Black"/>
+                                                <Span Text="{Binding scvd}" x:Name="MediumCVD1" TextColor="#000000"/>
+                                        <Span Text="%)." TextColor="Black"/>
+                                    </FormattedString.Spans>
+                                </FormattedString>
+                            </Label.FormattedText>
+                        </Label>
+                        <Label >
+                            <Label.FormattedText>
+                                <FormattedString>
+                                    <FormattedString.Spans>
+                                        <Span Text="It is important for you to make the " TextColor="Black"/>
+                                        <Span Text="right choice" TextColor="#0070c0"/>
+                                        <Span Text=" now and modify your lifestyle to " TextColor="Black"/>
+                                        <Span Text="reduce" TextColor="#00b050"/>
+                                        <Span Text=" your risk." TextColor="Black"/>
+                                    </FormattedString.Spans>
+                                </FormattedString>
+                            </Label.FormattedText>
+                        </Label>
+                    </StackLayout>
+                    
+                </Grid>
+            </Frame>
+                    <Frame x:Name="HighCVD" BackgroundColor="#faeb2e" CornerRadius="20" IsVisible="{Binding highcvd}">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="120"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Image Grid.Column="0" Source="home_pic4.png"  HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" />
+                    <StackLayout Grid.Column="1">
+                        <Label>
+                            <Label.FormattedText>
+                                <FormattedString>
+                                    <FormattedString.Spans>
+                                        <Span Text="Your risk for getting cardiovascular diseases in the next 10 years is " TextColor="Black"/>
+                                        <Span Text="high" TextColor="Red"/>
+                                        <Span Text="(" TextColor="Black"/>
+                                                <Span x:Name="HighCVD1" Text="{Binding scvd}" TextColor="Black"/>
+                                        <Span Text="%)." TextColor="Black"/>
+                                    </FormattedString.Spans>
+                                </FormattedString>
+                            </Label.FormattedText>
+                        </Label>
+                        <Label>
+                            <Label.FormattedText>
+                                <FormattedString>
+                                    <FormattedString.Spans>
+                                        <Span Text="You have the opportunity to initiate " TextColor="Black"/>
+                                        <Span Text="lifestyle changes" TextColor="#00b050"/>
+                                        <Span Text=" or " TextColor="Black"/>
+                                        <Span Text="treatments" TextColor="#0070c0"/>
+                                        <Span Text=", and potentially " TextColor="Black"/>
+                                        <Span Text="slow down" TextColor="#a86ed4"/>
+                                        <Span Text=" the progression or even prevent the incidents of CVDs." TextColor="Black"/>
+                                    </FormattedString.Spans>
+                                </FormattedString>
+                            </Label.FormattedText>
+                        </Label>
+                    </StackLayout>
+                </Grid>
+            </Frame>
+                    
+                    <Frame x:Name="HT" CornerRadius="20" BackgroundColor="White" IsVisible="{Binding showuptempalert}">
+                <StackLayout>
+                    <Label FontSize="20">
+                        <Label.FormattedText>
+                            <FormattedString>
+                                <FormattedString.Spans>
+                                    <Span Text="Weather" TextColor="#ff66cc"/>
+                                    <Span Text=" Related" TextColor="#00b0f0"/>
+                                    <Span Text=" Recommendations" TextColor="#a86ed4"/>
+                                </FormattedString.Spans>
+                            </FormattedString>
+                        </Label.FormattedText>
+                    </Label>
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="100"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <Image Grid.Column="0" Source="home_pic5"/>
+                        <StackLayout Grid.Column="1">
+                            <Label>
+                                <Label.FormattedText>
+                                    <FormattedString>
+                                        <FormattedString.Spans>
+                                            <Span Text="There is a significant " TextColor="Black"/>
+                                            <Span Text="increase"  TextColor="Red"/>
+                                            <Span Text=" in temperature." TextColor="Black"/>
+                                        </FormattedString.Spans>
+                                    </FormattedString>
+                                </Label.FormattedText>
+                            </Label>
+                            <Label>
+                                <Label.FormattedText>
+                                    <FormattedString>
+                                        <FormattedString.Spans>
+                                            <Span Text="Please "  TextColor="Black"/>
+                                            <Span Text="avoid staying under the sun"  TextColor="#00b050"/>
+                                            <Span Text=" for long periods of time and keep "  TextColor="Black"/>
+                                            <Span Text="hydrated."  TextColor="#0070c0"/>
+                                        </FormattedString.Spans>
+                                    </FormattedString>
+                                </Label.FormattedText>
+                            </Label>
+                        </StackLayout>
+                    </Grid>
+                    
+                </StackLayout>
+            </Frame>
+                    <Frame x:Name="LT" CornerRadius="20" BackgroundColor="White" IsVisible="{Binding showdowntempalert}">
+                        <StackLayout>
+                        <Label FontSize="20">
+                        <Label.FormattedText>
+                            <FormattedString>
+                                <FormattedString.Spans>
+                                    <Span Text="Weather" TextColor="#ff66cc"/>
+                                    <Span Text=" Related" TextColor="#00b0f0"/>
+                                    <Span Text=" Recommendations" TextColor="#a86ed4"/>
+                                </FormattedString.Spans>
+                            </FormattedString>
+                        </Label.FormattedText>
+                    </Label>
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="100"/>
+                                    <ColumnDefinition Width="*"/>
+                                </Grid.ColumnDefinitions>
+                                <Image Grid.Column="0" Source="home_pic6.png"/>
+                                <Label Grid.Column="1" VerticalOptions="CenterAndExpand">
+                                    <Label.FormattedText>
+                                        <FormattedString>
+                                            <FormattedString.Spans>
+                                            <Span Text="There is a significant " TextColor="Black"/>
+                                            <Span Text="drop" TextColor="#00b0f0"/>
+                                            <Span Text=" in temperature. Please " TextColor="Black"/>
+                                            <Span Text="wear more clothes" TextColor="#00b050"/>
+                                            <Span Text=" and keep yourself " TextColor="Black"/>
+                                            <Span Text="warm" TextColor="Red"/>
+                                        </FormattedString.Spans>
+                                    </FormattedString>
+                                </Label.FormattedText>
+                            </Label>
+                        </Grid>
+
+                    </StackLayout>
+                </Frame>
+                    <Frame x:Name="NAQ" CornerRadius="20" BackgroundColor="White" IsVisible="{Binding shownormalaq}" >
+                <StackLayout>
+                    <Label FontSize="20">
+                        <Label.FormattedText>
+                            <FormattedString>
+                                <FormattedString.Spans>
+                                    <Span Text="Weather" TextColor="#ff66cc"/>
+                                    <Span Text=" Related" TextColor="#00b0f0"/>
+                                    <Span Text=" Recommendations" TextColor="#a86ed4"/>
+                                </FormattedString.Spans>
+                            </FormattedString>
+                        </Label.FormattedText>
+                    </Label>
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="100"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <Image Grid.Column="0" Source="home_pic7.png"/>
+                           <Label Grid.Column="1" VerticalOptions="CenterAndExpand">
+                            <Label.FormattedText>
+                                <FormattedString>
+                                    <FormattedString.Spans>
+                                        <Span Text="The air quality is " TextColor="Black"/>
+                                        <Span Text="good" TextColor="#0070c0"/>
+                                        <Span Text=" tomorrow. You may start planning some outdoor " TextColor="Black"/>
+                                        <Span Text="activities" TextColor="#ffc000"/>
+                                        <Span Text=" and keep yourself healthy." TextColor="Black"/>
+                                    </FormattedString.Spans>
+                                </FormattedString>
+                            </Label.FormattedText>
+                        </Label>
+                    </Grid>
+
+                </StackLayout>
+            </Frame>
+                    <Frame x:Name="SAQ" CornerRadius="20" BackgroundColor="White" IsVisible="{Binding shownotsuitaq}">
+                <StackLayout>
+                    <Label FontSize="20">
+                        <Label.FormattedText>
+                            <FormattedString>
+                                <FormattedString.Spans>
+                                    <Span Text="Weather" TextColor="#ff66cc"/>
+                                    <Span Text=" Related" TextColor="#00b0f0"/>
+                                    <Span Text=" Recommendations" TextColor="#a86ed4"/>
+                                </FormattedString.Spans>
+                            </FormattedString>
+                        </Label.FormattedText>
+                    </Label>
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="100"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <Image Grid.Column="0" Source="home_pic8.png"/>
+                                <Label Grid.Column="1" VerticalOptions="CenterAndExpand">
+                            <Label.FormattedText>
+                                <FormattedString>
+                                    <FormattedString.Spans>
+                                        <Span Text="The air quality is " TextColor="Black"/>
+                                        <Span Text="fairly bad" TextColor="Red"/>
+                                        <Span Text=". High risk individuals should " TextColor="Black"/>
+                                        <Span Text="stay indoors" TextColor="#00b050"/>
+                                        <Span Text=" and " TextColor="Black"/>
+                                        <Span Text="wear mask" TextColor="#0070c0"/>
+                                        <Span Text=" when going outside." TextColor="Black"/>
+                                    </FormattedString.Spans>
+                                </FormattedString>
+                            </Label.FormattedText>
+                        </Label>
+                    </Grid>
+
+                </StackLayout>
+            </Frame>
+                    <Frame x:Name="BAQ" CornerRadius="20" BackgroundColor="White" IsVisible="{Binding showbadaq}">
+                <StackLayout>
+                    <Label FontSize="20">
+                        <Label.FormattedText>
+                            <FormattedString>
+                                <FormattedString.Spans>
+                                    <Span Text="Weather" TextColor="#ff66cc"/>
+                                    <Span Text=" Related" TextColor="#00b0f0"/>
+                                    <Span Text=" Recommendations" TextColor="#a86ed4"/>
+                                </FormattedString.Spans>
+                            </FormattedString>
+                        </Label.FormattedText>
+                    </Label>
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="100"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <Image Grid.Column="0" Source="home_pic9.png"/>
+                                <Label Grid.Column="1" VerticalOptions="CenterAndExpand">
+                            <Label.FormattedText>
+                                <FormattedString>
+                                    <FormattedString.Spans>
+                                        <Span Text="The air quality is" TextColor="Black"/>
+                                        <Span Text=" bad" TextColor="Red"/>
+                                        <Span Text=". Please" TextColor="Black"/>
+                                        <Span Text=" stay indoors" TextColor="#00b050"/>
+                                        <Span Text=" and " TextColor="Black"/>
+                                        <Span Text="wear mask" TextColor="#0070c0"/>
+                                        <Span Text=" when going outside." TextColor="Black"/>
+                                    </FormattedString.Spans>
+                                </FormattedString>
+                            </Label.FormattedText>
+                        </Label>
+                    </Grid>
+
+                </StackLayout>
+            </Frame>
+                    <Frame CornerRadius="20" BackgroundColor="White" IsVisible="{Binding HolidayVisible}">
+                        <StackLayout>
+                            <Label FontSize="20">
+                                <Label.FormattedText>
+                                    <FormattedString>
+                                        <FormattedString.Spans>
+                                            <Span Text="Holiday" TextColor="#ff66cc"/>
+                                            <Span Text=" Related" TextColor="#00b0f0"/>
+                                            <Span Text=" Recommendations" TextColor="#a86ed4"/>
+                                        </FormattedString.Spans>
+                                    </FormattedString>
+                                </Label.FormattedText>
+                            </Label>
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="100"/>
+                                    <ColumnDefinition Width="*"/>
+                                </Grid.ColumnDefinitions>
+                                <Image Grid.Column="0" Source="home_pic10.png"/>
+                                <StackLayout Grid.Column="1">
+                                    <Label>
+                                        <Label.FormattedText>
+                                            <FormattedString>
+                                                <FormattedString.Spans>
+                                                    <Span Text="We would like to wish you a great" TextColor="Black"/>
+                                                    <Span Text=" holiday" TextColor="#ff0000"/>
+                                                </FormattedString.Spans>
+                                            </FormattedString>
+                                        </Label.FormattedText>
+                                    </Label>
+                                    <Label>
+                                        <Label.FormattedText>
+                                            <FormattedString>
+                                                <FormattedString.Spans>
+                                                    <Span Text="However, we would like to remind you " TextColor="Black"/>
+                                                    <Span Text="not to over" TextColor="#ffcc00"/>
+                                                    <Span Text=" indulge in " TextColor="Black"/>
+                                                    <Span Text="drinking" TextColor="#00b050"/>
+                                                    <Span Text=", " TextColor="Black"/>
+                                                    <Span Text="eating fatty foods" TextColor="#0070c0"/>
+                                                    <Span Text=" as wells as " TextColor="Black"/>
+                                                    <Span Text="sleeping late" TextColor="#a86ed4"/>
+                                                    <Span Text="." TextColor="Black"/>
+                                                </FormattedString.Spans>
+                                            </FormattedString>
+                                        </Label.FormattedText>
+                                    </Label>
+                                    <Label>
+                                        <Label.FormattedText>
+                                            <FormattedString>
+                                                <FormattedString.Spans>
+                                                    <Span Text="Enjoy your holiday in a " TextColor="Black"/>
+                                                    <Span Text="healthy" TextColor="#a86ed4"/>
+                                                    <Span Text=" way!" TextColor="Black"/>
+                                                </FormattedString.Spans>
+                                            </FormattedString>
+                                        </Label.FormattedText>
+                                    </Label>
+                                </StackLayout>
+                                
+                            </Grid>
+
+                        </StackLayout>
+                    </Frame>
+                </StackLayout>
+            </ScrollView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

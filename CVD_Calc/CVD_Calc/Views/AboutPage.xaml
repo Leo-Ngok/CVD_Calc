@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CVD_Calc.Views.AboutPage"
+             xmlns:vm="clr-namespace:CVD_Calc.ViewModels"
+             Title="{Binding Title}">
+    <ContentPage.BindingContext>
+        <vm:AboutViewModel />
+    </ContentPage.BindingContext>
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <!--Page Level Resources: Compatible with Xamarin Live Player -->
+            <Color x:Key="Primary">#2196F3</Color>
+            <Color x:Key="Accent">#96d1ff</Color>
+            <Color x:Key="LightTextColor">#999999</Color>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <!--StackLayout BackgroundColor="{StaticResource Accent}" VerticalOptions="FillAndExpand" HorizontalOptions="Fill">
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center" VerticalOptions="Center">
+                <ContentView Padding="0,40,0,40" VerticalOptions="FillAndExpand">
+                    <Image Source="xamarin_logo.png" VerticalOptions="Center" HeightRequest="64" />
+                </ContentView>
+            </StackLayout>
+        </-->
+        <ScrollView Grid.Row="1">
+            <StackLayout Orientation="Vertical" Padding="16,40,16,40" Spacing="10">
+                <Label FontSize="22">
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <FormattedString.Spans>
+                                <Span Text="CVD risk index calculator" FontAttributes="Bold" FontSize="16" />
+                                <Span Text=" " />
+                                <Span Text="2.0.9" ForegroundColor="{StaticResource LightTextColor}" />
+                            </FormattedString.Spans>
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+                <Label>
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <FormattedString.Spans>
+                                <Span Text="This app is for reference only, " />
+                                <Span Text="NOT" FontAttributes="Bold"/>
+                                <Span Text=" a substitution for the advice of a medical professional"/>
+                                <Span Text="For more information, please visit "/>
+                                <Span Text="our project on github" FontAttributes="Italic" 
+                                      TextDecorations="Underline">
+                                    <Span.GestureRecognizers>
+                                        <TapGestureRecognizer Command="{Binding ClickCommand}"
+                                                              CommandParameter="https://github.com/Leo-Ngok/isweep_proj_v1.2"/>
+                                    </Span.GestureRecognizers>
+                                </Span>
+
+                            </FormattedString.Spans>
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+                <Label>
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <FormattedString.Spans>
+                                <Span Text="Feel free to give any feedback and recommendations." />
+                                <Span Text=" " />
+                                <Span Text="Press me " FontAttributes="Bold" TextDecorations="Underline">
+                                    <Span.GestureRecognizers>
+                                        <TapGestureRecognizer Command="{Binding ClickCommand}"
+                                                              
+                                                              CommandParameter="https://docs.google.com/forms/d/1yfJG_cwfJZSbqMdSYg3CmiJj6MBBjAEne6xNkRKsYHY/edit?usp=sharing"/>
+                                    </Span.GestureRecognizers>
+                                </Span>
+
+                                <Span Text=" " />
+                                <Span Text="for more details." />
+                            </FormattedString.Spans>
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+                <!--Button Margin="0,10,0,0" Text="Learn more"
+                        Command="{Binding OpenWebCommand}"
+                        BackgroundColor="{StaticResource Primary}"
+                        TextColor="White" /-->
+            </StackLayout>
+        </ScrollView>
+    </Grid>
+</ContentPage>

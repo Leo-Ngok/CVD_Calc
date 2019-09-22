@@ -1,0 +1,234 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AboutPageText1" xml:space="preserve">
+    <value>CVD risk index calculator</value>
+  </data>
+  <data name="AboutPageText2" xml:space="preserve">
+    <value>This app is for reference only,</value>
+  </data>
+  <data name="AboutPageText3" xml:space="preserve">
+    <value>NOT</value>
+  </data>
+  <data name="AboutPageText4" xml:space="preserve">
+    <value>a substitution for the advice of a medical professional</value>
+  </data>
+  <data name="AboutPageText5" xml:space="preserve">
+    <value>For more information, please visit</value>
+  </data>
+  <data name="AboutPageText6" xml:space="preserve">
+    <value>our project on github</value>
+  </data>
+  <data name="AboutPageText7" xml:space="preserve">
+    <value>Feel free to give any feedback and recommendations.</value>
+  </data>
+  <data name="AboutPageText8" xml:space="preserve">
+    <value>Press me</value>
+  </data>
+  <data name="AboutPageText9" xml:space="preserve">
+    <value>for more details.</value>
+  </data>
+  <data name="AboutPageTitle" xml:space="preserve">
+    <value>About</value>
+  </data>
+  <data name="CANCEL_MULLANG" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ConfigsPageTitle" xml:space="preserve">
+    <value />
+  </data>
+  <data name="HeightConfigDetail" xml:space="preserve">
+    <value />
+  </data>
+  <data name="HeightConfigText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="height_unit_ft" xml:space="preserve">
+    <value />
+  </data>
+  <data name="height_unit_m" xml:space="preserve">
+    <value />
+  </data>
+  <data name="HomePageBtn" xml:space="preserve">
+    <value>Get CVD Index immediately</value>
+  </data>
+  <data name="HomePageDText1" xml:space="preserve">
+    <value>Your current CVD index is </value>
+  </data>
+  <data name="HomePageDText2" xml:space="preserve">
+    <value>\nPlease press the button above to refresh the CVD index.</value>
+  </data>
+  <data name="HomePageTitle" xml:space="preserve">
+    <value>Home</value>
+  </data>
+  <data name="H_AS" xml:space="preserve">
+    <value />
+  </data>
+  <data name="LangConfigText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="NotifsectionTitle" xml:space="preserve">
+    <value />
+  </data>
+  <data name="OtherOptionText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TempConfigDetail" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TempConfigText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="temp_unit_c" xml:space="preserve">
+    <value />
+  </data>
+  <data name="temp_unit_f" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TimeOfAlertDetail" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TimeOfAlertTitle" xml:space="preserve">
+    <value />
+  </data>
+  <data name="T_AS" xml:space="preserve">
+    <value />
+  </data>
+  <data name="UnitsectionTitle" xml:space="preserve">
+    <value />
+  </data>
+  <data name="WeatheroptionText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="WeightConfigDetail" xml:space="preserve">
+    <value />
+  </data>
+  <data name="WeightConfigText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="weight_unit_kg" xml:space="preserve">
+    <value />
+  </data>
+  <data name="weight_unit_lb" xml:space="preserve">
+    <value />
+  </data>
+  <data name="W_AS" xml:space="preserve">
+    <value />
+  </data>
+</root>
