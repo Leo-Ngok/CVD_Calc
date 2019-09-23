@@ -1551,11 +1551,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\patrickn\\CVD_Calc\\CVD_Calc\\CVD_Calc.iOS\\CVD_Calc.iOS.csproj",
+      "projectUniqueName": "D:\\github\\cvdcalc\\CVD_Calc\\CVD_Calc\\CVD_Calc.iOS\\CVD_Calc.iOS.csproj",
       "projectName": "CVD_Calc.iOS",
-      "projectPath": "C:\\Users\\patrickn\\CVD_Calc\\CVD_Calc\\CVD_Calc.iOS\\CVD_Calc.iOS.csproj",
+      "projectPath": "D:\\github\\cvdcalc\\CVD_Calc\\CVD_Calc\\CVD_Calc.iOS\\CVD_Calc.iOS.csproj",
       "packagesPath": "C:\\Users\\patrickn\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\patrickn\\CVD_Calc\\CVD_Calc\\CVD_Calc.iOS\\obj\\",
+      "outputPath": "D:\\github\\cvdcalc\\CVD_Calc\\CVD_Calc\\CVD_Calc.iOS\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "configFilePaths": [
@@ -1572,8 +1572,8 @@
       "frameworks": {
         "xamarinios10": {
           "projectReferences": {
-            "C:\\Users\\patrickn\\CVD_Calc\\CVD_Calc\\CVD_Calc\\CVD_Calc.csproj": {
-              "projectPath": "C:\\Users\\patrickn\\CVD_Calc\\CVD_Calc\\CVD_Calc\\CVD_Calc.csproj"
+            "D:\\github\\cvdcalc\\CVD_Calc\\CVD_Calc\\CVD_Calc\\CVD_Calc.csproj": {
+              "projectPath": "D:\\github\\cvdcalc\\CVD_Calc\\CVD_Calc\\CVD_Calc\\CVD_Calc.csproj"
             }
           }
         }

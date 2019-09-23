@@ -1,4 +1,5 @@
 ﻿using CVD_Calc.Models;
+using CVD_Calc.Resx;
 using System;
 using System.Collections.Generic;
 
@@ -18,11 +19,11 @@ namespace CVD_Calc.Views
 
             menuItems = new List<HomeMenuItem>
             {
-                new HomeMenuItem{Id=MenuItemType.Home,Title="Home" },
-                new HomeMenuItem{Id=MenuItemType.Interval_Timer,Title="Interval Timer"},
-                new HomeMenuItem{Id=MenuItemType.Profile,Title="Profile" },
-                new HomeMenuItem{Id=MenuItemType.Configs,Title="Configurations" },
-                new HomeMenuItem {Id = MenuItemType.About, Title="About" }
+                new HomeMenuItem{Id=MenuItemType.Home,Title=AppResources.MenuPageItem1 },
+                new HomeMenuItem{Id=MenuItemType.Interval_Timer,Title=AppResources.MenuPageItem2},
+                new HomeMenuItem{Id=MenuItemType.Profile,Title=AppResources.MenuPageItem3 },
+               // new HomeMenuItem{Id=MenuItemType.Configs,Title=AppResources.MenuPageItem4 },
+                new HomeMenuItem {Id = MenuItemType.About,Title=AppResources.MenuPageItem5 }
             };
 
             ListViewMenu.ItemsSource = menuItems;
@@ -37,7 +38,10 @@ namespace CVD_Calc.Views
                     db.CreateTable<DB_pdata>();
                     if (db.Table<DB_pdata>().ToList().Count == 0)
                     {
-                        await DisplayAlert("Warning", "Please fill in all your personal data before leaving", "dismiss");
+                        
+                        await DisplayAlert(AppResources.Profile_leave_wo_submit_title,
+                            AppResources.Profile_leave_wo_submit_caption,
+                            AppResources.Profile_leave_wo_submit_btn);
                         ((ListView)sender).SelectedItem = null;
                         return;
                     }

@@ -43,6 +43,7 @@ namespace CVD_Calc
         public App() { InitializeComponent(); }
         public App(string persondatapath, string arg2)
         {
+           // CrossLocalNotifications.Current.Show("Note", "App is running normally", 7000);
             InitializeComponent();
             DB_persondata = persondatapath;
             everydayinfo = arg2;
@@ -56,14 +57,19 @@ namespace CVD_Calc
                 DependencyService.Get<ILocalize>().SetLocale(new System.Globalization.CultureInfo("zh-TW"));//ci
             }
         */
-            AppCenter.Start("android=8acd780f-d450-439f-92d8-d9eabcec6a85;" +
-                      "uwp={Your UWP App secret here};" +
-                      "ios={Your iOS App secret here}",
+            AppCenter.Start("android=8acd780f-d450-439f-92d8-d9eabcec6a85;",
                       typeof(Analytics), typeof(Crashes));
         }
 
-        protected override void OnStart()
+        protected override async void OnStart()
         {
+            await Crashes.SetEnabledAsync(true);
+            bool has_crashed = await Crashes.HasCrashedInLastSessionAsync();
+            if (has_crashed)
+            {
+                ErrorReport errorReport = await Crashes.GetLastSessionCrashReportAsync();
+                Crashes.ShouldProcessErrorReport = (ErrorReport report) => true;
+            }
             // Handle when your app starts
         }
 
@@ -130,11 +136,15 @@ namespace CVD_Calc
             try
             {      
                 double cvd_idx = double.NaN;
-                var dbc = new SQLiteConnection(DB_persondata);
-                dbc.CreateTable<DB_pdata>();
-                if (dbc.Table<DB_pdata>().ToList().Count == 0) return;
-                var c = dbc.Table<DB_pdata>().ToList().First();
-                dbc.Close();
+                DB_pdata c;
+
+                using (SQLiteConnection dbc = new SQLiteConnection(DB_persondata))
+                {
+                    dbc.CreateTable<DB_pdata>();
+                    if (dbc.Table<DB_pdata>().ToList().Count == 0) return;
+                    c = dbc.Table<DB_pdata>().ToList().First();
+                }
+                
                 //以下假期因素
                 bool isholiday = holiday[DateTime.Now.Month - 1].Contains(DateTime.Now.Day);
                 //以下空氣污染物
@@ -180,13 +190,18 @@ namespace CVD_Calc
                 //路環一般性
                 var aqi6 = aqi["cd"].Children().ToList().Last().ToObject<AQIVal>().value;
                 double aqia = getwwmean(aqi1, aqi2, aqi3, aqi4, aqi5, aqi6);
-                if(showaqi) CrossLocalNotifications.Current.Show("Air Quality Notice", "The AQI for today is " +aqia.ToString(), 100001);
+                // if(showaqi) 
+                CrossLocalNotifications.Current.Show("Air Quality Notice", "The AQI for today is " +aqia.ToString(), 100001);
                 using (SQLiteConnection savedt = new SQLiteConnection(everydayinfo))
                 {
                     savedt.CreateTable<weatherkey>();
                     savedt.Insert(new weatherkey() { date = DateTime.Now, CVD_idx = cvd_idx ,AQI_idx=aqia,todaytemp=todaytemp,futuretemp=futuretemp});
                 }
-            }catch(Exception EX) { CrossLocalNotifications.Current.Show("error", EX.Message + " " + EX.Source); }
+            }catch(Exception EX) {
+#if DEBUG
+                CrossLocalNotifications.Current.Show("error", EX.Message + " " + EX.Source);
+#endif
+            }
         }
 
         private static double calcvd(DB_pdata c, double tem, weatherkey aq, bool ishol)

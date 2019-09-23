@@ -3,15 +3,14 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="CVD_Calc.Views.HomePage"
              xmlns:vm="clr-namespace:CVD_Calc.ViewModels"
-             Title="Home">
+             xmlns:i18n="clr-namespace:CVD_Calc.Views"
+             Title="{i18n:Translate HomePageTitle}">
     <ContentPage.BindingContext>
         <vm:HomeViewModel />
     </ContentPage.BindingContext>
     <ContentPage.Content>
         <StackLayout>
             <Button Text="refresh the Cardiovascular risk" Clicked="Button_Clicked" />
-           
-           
             <ScrollView>
                 <StackLayout>
                     <Frame CornerRadius="20" BackgroundColor="White" IsVisible="True">

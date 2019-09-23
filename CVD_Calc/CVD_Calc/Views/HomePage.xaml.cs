@@ -1,6 +1,7 @@
 ﻿using CVD_Calc.Models;
 using CVD_Calc.Resx;
 using CVD_Calc.ViewModels;
+using Microsoft.AppCenter.Crashes;
 using Plugin.LocalNotifications;
 using System;
 using System.Collections.Generic;
@@ -44,7 +45,9 @@ namespace CVD_Calc.Views
         }
         private async void Button_Clicked(object sender, EventArgs e)
         {
-            throw new NotImplementedException();
+            //throw new NotImplementedException();
+            //Crashes.GenerateTestCrash();
+            
             await Task.Run(() => App.calcvdAsync(false));            
             System.Threading.Thread.Sleep(3000);
             configurestate();

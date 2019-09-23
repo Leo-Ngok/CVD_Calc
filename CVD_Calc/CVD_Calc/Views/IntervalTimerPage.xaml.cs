@@ -1,4 +1,5 @@
-﻿using CVD_Calc.Services;
+﻿using CVD_Calc.Resx;
+using CVD_Calc.Services;
 using Plugin.LocalNotifications;
 using System;
 using System.Collections.Generic;
@@ -39,14 +40,14 @@ namespace CVD_Calc.Views
             {
                 if (isworking)
                 {
-                    state.Text = "working";
+                    state.Text = AppResources._IntervalTimer_WorkStateCaption;
                     timeleft.Text = totimeformat(wtotaltime--);
                     if (wtotaltime < 0)
                     {
                         isworking = false;
                         rtotaltime = rinittime;
                         //CrossLocalNotifications.Current.Cancel(101);
-                        CrossLocalNotifications.Current.Show("CVD Calculator", "times up, rest now!", 120);
+                        CrossLocalNotifications.Current.Show("CVD Calculator", AppResources._IntervalTimer_WorkingTimesUp_Notif, 120);
                         try
                         {
                             CrossLocalNotifications.Current.Cancel(130);
@@ -57,13 +58,13 @@ namespace CVD_Calc.Views
                 }
                 else
                 {
-                    state.Text = "resting";
+                    state.Text = AppResources._IntervalTimer_RestStateCaption;
                     timeleft.Text = totimeformat(rtotaltime--);
                     if (rtotaltime < 0)
                     {
                         isworking = true;
                         wtotaltime = winittime;
-                        CrossLocalNotifications.Current.Show("CVD Calculator", "times up, work now!", 130);
+                        CrossLocalNotifications.Current.Show("CVD Calculator", AppResources._IntervalTimer_RestingTimesUp_Notif, 130);
                         try
                         {
                             CrossLocalNotifications.Current.Cancel(120);
@@ -185,31 +186,35 @@ namespace CVD_Calc.Views
         private void Startbtn_Clicked(object sender, EventArgs e) {
             if ((startbtn.Text)== "Start")
             {
-                winittime = int.Parse(Whr.Text) * 3600 + int.Parse(Wmin.Text) * 60 + int.Parse(Wsec.Text);
-                rinittime = int.Parse(Rhr.Text) * 3600 + int.Parse(Rmin.Text) * 60 + int.Parse(Rsec.Text);
+                winittime = int.Parse(Whr.Text) * 3600 + 
+                    int.Parse(Wmin.Text) * 60 + int.Parse(Wsec.Text);
+                rinittime = int.Parse(Rhr.Text) * 3600 +
+                    int.Parse(Rmin.Text) * 60 + int.Parse(Rsec.Text);
                 if (winittime <= 0 || rinittime <= 0)
                 {                  
-                    DisplayAlert("Error", "Please set a valid time", "Retry");
+                    DisplayAlert(AppResources._IntervalTimer_ErrorAlert_Title, 
+                        AppResources._IntervalTimer_ErrorAlert_Caption,
+                        AppResources._IntervalTimer_ErrorAlert_Btn);
                     return;
                 }
                 rtotaltime = rinittime;
                 wtotaltime = winittime;
                 _ttimer.Start();
-
-                startbtn.Text = "Pause";
-                state.Text = "working";
+                                               
+                startbtn.Text = AppResources._IntervalTimer_pausebtn;
+                state.Text = AppResources._IntervalTimer_WorkStateCaption;
                 Stopbtn.IsEnabled = false;
             }
-            else if ((startbtn.Text) == "Continue")
+            else if ((startbtn.Text) == AppResources._IntervalTimer_continuebtn)
             {
                 _ttimer.Start();
-                startbtn.Text = "Pause";
+                startbtn.Text = AppResources._IntervalTimer_pausebtn;
                 Stopbtn.IsEnabled = false;
             }
-            else if ((startbtn.Text)== "Pause")
+            else if ((startbtn.Text)== AppResources._IntervalTimer_pausebtn)
             {
                 _ttimer.Stop();
-                startbtn.Text = "Continue";
+                startbtn.Text = AppResources._IntervalTimer_continuebtn;
                 Stopbtn.IsEnabled = true;
             }
             Rhr.IsEnabled = false;
@@ -226,7 +231,7 @@ namespace CVD_Calc.Views
         private void Stopbtn_Clicked(object sender, EventArgs e) {
             _ttimer.Stop();
             Stopbtn.IsEnabled = false;
-            startbtn.Text = "Start";
+            startbtn.Text = AppResources._IntervalTimer_startbtn;
             winittime = 0;
             rinittime = 0;
             wtotaltime = 0;
@@ -243,7 +248,7 @@ namespace CVD_Calc.Views
             Rde.IsEnabled = !false;
             rin.IsEnabled = !false;
             timeleft.Text = "00:00:00";
-            state.Text = "Interval Timer";
+            state.Text = AppResources._IntervalTimer_InitialCaption;
 
         }
         string totimeformat(int time)

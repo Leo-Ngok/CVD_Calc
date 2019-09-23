@@ -61,11 +61,1370 @@ namespace CVD_Calc.Resx {
         }
         
         /// <summary>
+        ///   查詢類似 Continue 的當地語系化字串。
+        /// </summary>
+        public static string _IntervalTimer_continuebtn {
+            get {
+                return ResourceManager.GetString("_IntervalTimer_continuebtn", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 Retry 的當地語系化字串。
+        /// </summary>
+        public static string _IntervalTimer_ErrorAlert_Btn {
+            get {
+                return ResourceManager.GetString("_IntervalTimer_ErrorAlert_Btn", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 Please set a valid time 的當地語系化字串。
+        /// </summary>
+        public static string _IntervalTimer_ErrorAlert_Caption {
+            get {
+                return ResourceManager.GetString("_IntervalTimer_ErrorAlert_Caption", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 Error 的當地語系化字串。
+        /// </summary>
+        public static string _IntervalTimer_ErrorAlert_Title {
+            get {
+                return ResourceManager.GetString("_IntervalTimer_ErrorAlert_Title", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 Interval Timer 的當地語系化字串。
+        /// </summary>
+        public static string _IntervalTimer_InitialCaption {
+            get {
+                return ResourceManager.GetString("_IntervalTimer_InitialCaption", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 Pause 的當地語系化字串。
+        /// </summary>
+        public static string _IntervalTimer_pausebtn {
+            get {
+                return ResourceManager.GetString("_IntervalTimer_pausebtn", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 Rest Interval 的當地語系化字串。
+        /// </summary>
+        public static string _IntervalTimer_rest_interval {
+            get {
+                return ResourceManager.GetString("_IntervalTimer_rest_interval", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 times up, work now! 的當地語系化字串。
+        /// </summary>
+        public static string _IntervalTimer_RestingTimesUp_Notif {
+            get {
+                return ResourceManager.GetString("_IntervalTimer_RestingTimesUp_Notif", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 resting 的當地語系化字串。
+        /// </summary>
+        public static string _IntervalTimer_RestStateCaption {
+            get {
+                return ResourceManager.GetString("_IntervalTimer_RestStateCaption", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 Start 的當地語系化字串。
+        /// </summary>
+        public static string _IntervalTimer_startbtn {
+            get {
+                return ResourceManager.GetString("_IntervalTimer_startbtn", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 Stop 的當地語系化字串。
+        /// </summary>
+        public static string _IntervalTimer_stopbtn {
+            get {
+                return ResourceManager.GetString("_IntervalTimer_stopbtn", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 Interval Timer 的當地語系化字串。
+        /// </summary>
+        public static string _IntervalTimer_Title {
+            get {
+                return ResourceManager.GetString("_IntervalTimer_Title", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 Work Interval 的當地語系化字串。
+        /// </summary>
+        public static string _IntervalTimer_work_interval {
+            get {
+                return ResourceManager.GetString("_IntervalTimer_work_interval", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 times up, rest now! 的當地語系化字串。
+        /// </summary>
+        public static string _IntervalTimer_WorkingTimesUp_Notif {
+            get {
+                return ResourceManager.GetString("_IntervalTimer_WorkingTimesUp_Notif", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 working 的當地語系化字串。
+        /// </summary>
+        public static string _IntervalTimer_WorkStateCaption {
+            get {
+                return ResourceManager.GetString("_IntervalTimer_WorkStateCaption", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 CVD risk index calculator 的當地語系化字串。
+        /// </summary>
+        public static string AboutPageText1 {
+            get {
+                return ResourceManager.GetString("AboutPageText1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 This app is for reference only,  的當地語系化字串。
+        /// </summary>
+        public static string AboutPageText2 {
+            get {
+                return ResourceManager.GetString("AboutPageText2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 NOT 的當地語系化字串。
+        /// </summary>
+        public static string AboutPageText3 {
+            get {
+                return ResourceManager.GetString("AboutPageText3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似  a substitution for the advice of a medical professional.  的當地語系化字串。
+        /// </summary>
+        public static string AboutPageText4 {
+            get {
+                return ResourceManager.GetString("AboutPageText4", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 For more information, please visit  的當地語系化字串。
+        /// </summary>
+        public static string AboutPageText5 {
+            get {
+                return ResourceManager.GetString("AboutPageText5", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 our project on github 的當地語系化字串。
+        /// </summary>
+        public static string AboutPageText6 {
+            get {
+                return ResourceManager.GetString("AboutPageText6", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 Feel free to give any feedback and recommendations. 的當地語系化字串。
+        /// </summary>
+        public static string AboutPageText7 {
+            get {
+                return ResourceManager.GetString("AboutPageText7", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 Press me  的當地語系化字串。
+        /// </summary>
+        public static string AboutPageText8 {
+            get {
+                return ResourceManager.GetString("AboutPageText8", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 for more details. 的當地語系化字串。
+        /// </summary>
+        public static string AboutPageText9 {
+            get {
+                return ResourceManager.GetString("AboutPageText9", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 About 的當地語系化字串。
+        /// </summary>
+        public static string AboutPageTitle {
+            get {
+                return ResourceManager.GetString("AboutPageTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似  的當地語系化字串。
+        /// </summary>
+        public static string Home_Box_HolidayTitle1 {
+            get {
+                return ResourceManager.GetString("Home_Box_HolidayTitle1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 Weather 的當地語系化字串。
+        /// </summary>
+        public static string Home_Box_WeatherTitle1 {
+            get {
+                return ResourceManager.GetString("Home_Box_WeatherTitle1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似  Related 的當地語系化字串。
+        /// </summary>
+        public static string Home_Box_WeatherTitle2 {
+            get {
+                return ResourceManager.GetString("Home_Box_WeatherTitle2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似  Recommendations 的當地語系化字串。
+        /// </summary>
+        public static string Home_Box_WeatherTitle3 {
+            get {
+                return ResourceManager.GetString("Home_Box_WeatherTitle3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 Your risk for getting cardiovascular diseases in the next 10 years is 的當地語系化字串。
+        /// </summary>
+        public static string Home_Box_Your_risk__is {
+            get {
+                return ResourceManager.GetString("Home_Box_Your_risk__is", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 As 的當地語系化字串。
+        /// </summary>
+        public static string Home_Box1_1 {
+            get {
+                return ResourceManager.GetString("Home_Box1_1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 extreme temperature 的當地語系化字串。
+        /// </summary>
+        public static string Home_Box1_2 {
+            get {
+                return ResourceManager.GetString("Home_Box1_2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似  air quality 的當地語系化字串。
+        /// </summary>
+        public static string Home_Box1_3 {
+            get {
+                return ResourceManager.GetString("Home_Box1_3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 and  的當地語系化字串。
+        /// </summary>
+        public static string Home_Box1_4 {
+            get {
+                return ResourceManager.GetString("Home_Box1_4", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 holiday season lifestyle 的當地語系化字串。
+        /// </summary>
+        public static string Home_Box1_5 {
+            get {
+                return ResourceManager.GetString("Home_Box1_5", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 has dramatic effect on CVD risk. We strongly urge you to pay attention on the  的當地語系化字串。
+        /// </summary>
+        public static string Home_Box1_6 {
+            get {
+                return ResourceManager.GetString("Home_Box1_6", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 recommendation 的當地語系化字串。
+        /// </summary>
+        public static string Home_Box1_7 {
+            get {
+                return ResourceManager.GetString("Home_Box1_7", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 from our app which may help you prevent a CVD related incident. 的當地語系化字串。
+        /// </summary>
+        public static string Home_Box1_8 {
+            get {
+                return ResourceManager.GetString("Home_Box1_8", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似  bad 的當地語系化字串。
+        /// </summary>
+        public static string Home_Box10_2 {
+            get {
+                return ResourceManager.GetString("Home_Box10_2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 . Please 的當地語系化字串。
+        /// </summary>
+        public static string Home_Box10_3 {
+            get {
+                return ResourceManager.GetString("Home_Box10_3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 We would like to wish you a great 的當地語系化字串。
+        /// </summary>
+        public static string Home_Box11_1 {
+            get {
+                return ResourceManager.GetString("Home_Box11_1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 Enjoy your holiday in a  的當地語系化字串。
+        /// </summary>
+        public static string Home_Box11_10 {
+            get {
+                return ResourceManager.GetString("Home_Box11_10", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 healthy 的當地語系化字串。
+        /// </summary>
+        public static string Home_Box11_11 {
+            get {
+                return ResourceManager.GetString("Home_Box11_11", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似  way! 的當地語系化字串。
+        /// </summary>
+        public static string Home_Box11_12 {
+            get {
+                return ResourceManager.GetString("Home_Box11_12", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似  holiday 的當地語系化字串。
+        /// </summary>
+        public static string Home_Box11_2 {
+            get {
+                return ResourceManager.GetString("Home_Box11_2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 However, we would like to remind you  的當地語系化字串。
+        /// </summary>
+        public static string Home_Box11_3 {
+            get {
+                return ResourceManager.GetString("Home_Box11_3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 not to over 的當地語系化字串。
+        /// </summary>
+        public static string Home_Box11_4 {
+            get {
+                return ResourceManager.GetString("Home_Box11_4", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似  indulge in   的當地語系化字串。
+        /// </summary>
+        public static string Home_Box11_5 {
+            get {
+                return ResourceManager.GetString("Home_Box11_5", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 drinking 的當地語系化字串。
+        /// </summary>
+        public static string Home_Box11_6 {
+            get {
+                return ResourceManager.GetString("Home_Box11_6", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 eating fatty foods 的當地語系化字串。
+        /// </summary>
+        public static string Home_Box11_7 {
+            get {
+                return ResourceManager.GetString("Home_Box11_7", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似  as well as  的當地語系化字串。
+        /// </summary>
+        public static string Home_Box11_8 {
+            get {
+                return ResourceManager.GetString("Home_Box11_8", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 sleeping late 的當地語系化字串。
+        /// </summary>
+        public static string Home_Box11_9 {
+            get {
+                return ResourceManager.GetString("Home_Box11_9", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 C 的當地語系化字串。
+        /// </summary>
+        public static string Home_Box2_1 {
+            get {
+                return ResourceManager.GetString("Home_Box2_1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 a 的當地語系化字串。
+        /// </summary>
+        public static string Home_Box2_10 {
+            get {
+                return ResourceManager.GetString("Home_Box2_10", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 t 的當地語系化字串。
+        /// </summary>
+        public static string Home_Box2_11 {
+            get {
+                return ResourceManager.GetString("Home_Box2_11", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 i 的當地語系化字串。
+        /// </summary>
+        public static string Home_Box2_12 {
+            get {
+                return ResourceManager.GetString("Home_Box2_12", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 o 的當地語系化字串。
+        /// </summary>
+        public static string Home_Box2_13 {
+            get {
+                return ResourceManager.GetString("Home_Box2_13", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 n 的當地語系化字串。
+        /// </summary>
+        public static string Home_Box2_14 {
+            get {
+                return ResourceManager.GetString("Home_Box2_14", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 s 的當地語系化字串。
+        /// </summary>
+        public static string Home_Box2_15 {
+            get {
+                return ResourceManager.GetString("Home_Box2_15", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 ! 的當地語系化字串。
+        /// </summary>
+        public static string Home_Box2_16 {
+            get {
+                return ResourceManager.GetString("Home_Box2_16", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似  relatively low 的當地語系化字串。
+        /// </summary>
+        public static string Home_Box2_18 {
+            get {
+                return ResourceManager.GetString("Home_Box2_18", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 %). Keep up the good work! 的當地語系化字串。
+        /// </summary>
+        public static string Home_Box2_19 {
+            get {
+                return ResourceManager.GetString("Home_Box2_19", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 o 的當地語系化字串。
+        /// </summary>
+        public static string Home_Box2_2 {
+            get {
+                return ResourceManager.GetString("Home_Box2_2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 n 的當地語系化字串。
+        /// </summary>
+        public static string Home_Box2_3 {
+            get {
+                return ResourceManager.GetString("Home_Box2_3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 g 的當地語系化字串。
+        /// </summary>
+        public static string Home_Box2_4 {
+            get {
+                return ResourceManager.GetString("Home_Box2_4", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 r 的當地語系化字串。
+        /// </summary>
+        public static string Home_Box2_5 {
+            get {
+                return ResourceManager.GetString("Home_Box2_5", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 a 的當地語系化字串。
+        /// </summary>
+        public static string Home_Box2_6 {
+            get {
+                return ResourceManager.GetString("Home_Box2_6", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 t 的當地語系化字串。
+        /// </summary>
+        public static string Home_Box2_7 {
+            get {
+                return ResourceManager.GetString("Home_Box2_7", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 u 的當地語系化字串。
+        /// </summary>
+        public static string Home_Box2_8 {
+            get {
+                return ResourceManager.GetString("Home_Box2_8", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 l 的當地語系化字串。
+        /// </summary>
+        public static string Home_Box2_9 {
+            get {
+                return ResourceManager.GetString("Home_Box2_9", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 You  的當地語系化字串。
+        /// </summary>
+        public static string Home_Box3_1 {
+            get {
+                return ResourceManager.GetString("Home_Box3_1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 can  的當地語系化字串。
+        /// </summary>
+        public static string Home_Box3_2 {
+            get {
+                return ResourceManager.GetString("Home_Box3_2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 do  的當地語系化字串。
+        /// </summary>
+        public static string Home_Box3_3 {
+            get {
+                return ResourceManager.GetString("Home_Box3_3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 better 的當地語系化字串。
+        /// </summary>
+        public static string Home_Box3_4 {
+            get {
+                return ResourceManager.GetString("Home_Box3_4", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似  moderate 的當地語系化字串。
+        /// </summary>
+        public static string Home_Box3_5 {
+            get {
+                return ResourceManager.GetString("Home_Box3_5", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 You are what you eat! You are what you do! Choose a  的當地語系化字串。
+        /// </summary>
+        public static string Home_Box3_6 {
+            get {
+                return ResourceManager.GetString("Home_Box3_6", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 better lifestyle 的當地語系化字串。
+        /// </summary>
+        public static string Home_Box3_7 {
+            get {
+                return ResourceManager.GetString("Home_Box3_7", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似  for a healthier future. 的當地語系化字串。
+        /// </summary>
+        public static string Home_Box3_8 {
+            get {
+                return ResourceManager.GetString("Home_Box3_8", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 borderline high 的當地語系化字串。
+        /// </summary>
+        public static string Home_Box4_1 {
+            get {
+                return ResourceManager.GetString("Home_Box4_1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 It is important for you to make the  的當地語系化字串。
+        /// </summary>
+        public static string Home_Box4_2 {
+            get {
+                return ResourceManager.GetString("Home_Box4_2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 right choice 的當地語系化字串。
+        /// </summary>
+        public static string Home_Box4_3 {
+            get {
+                return ResourceManager.GetString("Home_Box4_3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似  now and modify your lifestyle to  的當地語系化字串。
+        /// </summary>
+        public static string Home_Box4_4 {
+            get {
+                return ResourceManager.GetString("Home_Box4_4", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 reduce 的當地語系化字串。
+        /// </summary>
+        public static string Home_Box4_5 {
+            get {
+                return ResourceManager.GetString("Home_Box4_5", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似  your risk. 的當地語系化字串。
+        /// </summary>
+        public static string Home_Box4_6 {
+            get {
+                return ResourceManager.GetString("Home_Box4_6", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 high 的當地語系化字串。
+        /// </summary>
+        public static string Home_Box5_1 {
+            get {
+                return ResourceManager.GetString("Home_Box5_1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 You have the opportunity to initiate  的當地語系化字串。
+        /// </summary>
+        public static string Home_Box5_2 {
+            get {
+                return ResourceManager.GetString("Home_Box5_2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 lifestyle changes 的當地語系化字串。
+        /// </summary>
+        public static string Home_Box5_3 {
+            get {
+                return ResourceManager.GetString("Home_Box5_3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似  or  的當地語系化字串。
+        /// </summary>
+        public static string Home_Box5_4 {
+            get {
+                return ResourceManager.GetString("Home_Box5_4", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 treatments 的當地語系化字串。
+        /// </summary>
+        public static string Home_Box5_5 {
+            get {
+                return ResourceManager.GetString("Home_Box5_5", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 , and potentially  的當地語系化字串。
+        /// </summary>
+        public static string Home_Box5_6 {
+            get {
+                return ResourceManager.GetString("Home_Box5_6", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 slow down 的當地語系化字串。
+        /// </summary>
+        public static string Home_Box5_7 {
+            get {
+                return ResourceManager.GetString("Home_Box5_7", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似  the progression or even prevent the incidents of CVDs. 的當地語系化字串。
+        /// </summary>
+        public static string Home_Box5_8 {
+            get {
+                return ResourceManager.GetString("Home_Box5_8", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 increase 的當地語系化字串。
+        /// </summary>
+        public static string Home_Box6_2 {
+            get {
+                return ResourceManager.GetString("Home_Box6_2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似  in temperature. 的當地語系化字串。
+        /// </summary>
+        public static string Home_Box6_3 {
+            get {
+                return ResourceManager.GetString("Home_Box6_3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 Please  的當地語系化字串。
+        /// </summary>
+        public static string Home_Box6_4 {
+            get {
+                return ResourceManager.GetString("Home_Box6_4", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 avoid staying under the sun 的當地語系化字串。
+        /// </summary>
+        public static string Home_Box6_5 {
+            get {
+                return ResourceManager.GetString("Home_Box6_5", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似  for long periods of time and keep  的當地語系化字串。
+        /// </summary>
+        public static string Home_Box6_6 {
+            get {
+                return ResourceManager.GetString("Home_Box6_6", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 hydrated. 的當地語系化字串。
+        /// </summary>
+        public static string Home_Box6_7 {
+            get {
+                return ResourceManager.GetString("Home_Box6_7", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 There is a significant  的當地語系化字串。
+        /// </summary>
+        public static string Home_Box6_7_1 {
+            get {
+                return ResourceManager.GetString("Home_Box6_7_1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 drop 的當地語系化字串。
+        /// </summary>
+        public static string Home_Box7_2 {
+            get {
+                return ResourceManager.GetString("Home_Box7_2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似  in temperature. Please  的當地語系化字串。
+        /// </summary>
+        public static string Home_Box7_3 {
+            get {
+                return ResourceManager.GetString("Home_Box7_3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 wear more clothes 的當地語系化字串。
+        /// </summary>
+        public static string Home_Box7_4 {
+            get {
+                return ResourceManager.GetString("Home_Box7_4", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似  and keep yourself  的當地語系化字串。
+        /// </summary>
+        public static string Home_Box7_5 {
+            get {
+                return ResourceManager.GetString("Home_Box7_5", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 warm 的當地語系化字串。
+        /// </summary>
+        public static string Home_Box7_6 {
+            get {
+                return ResourceManager.GetString("Home_Box7_6", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 good 的當地語系化字串。
+        /// </summary>
+        public static string Home_Box8_2 {
+            get {
+                return ResourceManager.GetString("Home_Box8_2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似  tomorrow. You may start planning some outdoor  的當地語系化字串。
+        /// </summary>
+        public static string Home_Box8_3 {
+            get {
+                return ResourceManager.GetString("Home_Box8_3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 activities 的當地語系化字串。
+        /// </summary>
+        public static string Home_Box8_4 {
+            get {
+                return ResourceManager.GetString("Home_Box8_4", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似  and keep yourself healthy. 的當地語系化字串。
+        /// </summary>
+        public static string Home_Box8_5 {
+            get {
+                return ResourceManager.GetString("Home_Box8_5", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 The air quality is  的當地語系化字串。
+        /// </summary>
+        public static string Home_Box8_9_10_1 {
+            get {
+                return ResourceManager.GetString("Home_Box8_9_10_1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 stay indoors 的當地語系化字串。
+        /// </summary>
+        public static string Home_Box9_10_4 {
+            get {
+                return ResourceManager.GetString("Home_Box9_10_4", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似  and  的當地語系化字串。
+        /// </summary>
+        public static string Home_Box9_10_5 {
+            get {
+                return ResourceManager.GetString("Home_Box9_10_5", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 wear mask 的當地語系化字串。
+        /// </summary>
+        public static string Home_Box9_10_6 {
+            get {
+                return ResourceManager.GetString("Home_Box9_10_6", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似  when going outside. 的當地語系化字串。
+        /// </summary>
+        public static string Home_Box9_10_7 {
+            get {
+                return ResourceManager.GetString("Home_Box9_10_7", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 fairly bad 的當地語系化字串。
+        /// </summary>
+        public static string Home_Box9_2 {
+            get {
+                return ResourceManager.GetString("Home_Box9_2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 . High risk individuals should  的當地語系化字串。
+        /// </summary>
+        public static string Home_Box9_3 {
+            get {
+                return ResourceManager.GetString("Home_Box9_3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 refresh the Cardiovascular risk 的當地語系化字串。
+        /// </summary>
+        public static string Home_Button {
+            get {
+                return ResourceManager.GetString("Home_Button", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 Get CVD Index immediately 的當地語系化字串。
+        /// </summary>
+        public static string HomePageBtn {
+            get {
+                return ResourceManager.GetString("HomePageBtn", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 Your current CVD index is  的當地語系化字串。
+        /// </summary>
+        public static string HomePageDText1 {
+            get {
+                return ResourceManager.GetString("HomePageDText1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 \nPlease press the button above to refresh the CVD index. 的當地語系化字串。
+        /// </summary>
+        public static string HomePageDText2 {
+            get {
+                return ResourceManager.GetString("HomePageDText2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   查詢類似 Home 的當地語系化字串。
         /// </summary>
         public static string HomePageTitle {
             get {
                 return ResourceManager.GetString("HomePageTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 Home 的當地語系化字串。
+        /// </summary>
+        public static string MenuPageItem1 {
+            get {
+                return ResourceManager.GetString("MenuPageItem1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 Interval Timer 的當地語系化字串。
+        /// </summary>
+        public static string MenuPageItem2 {
+            get {
+                return ResourceManager.GetString("MenuPageItem2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 Profile 的當地語系化字串。
+        /// </summary>
+        public static string MenuPageItem3 {
+            get {
+                return ResourceManager.GetString("MenuPageItem3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 Configurations 的當地語系化字串。
+        /// </summary>
+        public static string MenuPageItem4 {
+            get {
+                return ResourceManager.GetString("MenuPageItem4", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 About 的當地語系化字串。
+        /// </summary>
+        public static string MenuPageItem5 {
+            get {
+                return ResourceManager.GetString("MenuPageItem5", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 Submit 的當地語系化字串。
+        /// </summary>
+        public static string Profile_btn {
+            get {
+                return ResourceManager.GetString("Profile_btn", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 User Information 的當地語系化字串。
+        /// </summary>
+        public static string Profile_lbl0 {
+            get {
+                return ResourceManager.GetString("Profile_lbl0", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 Date of Birth 的當地語系化字串。
+        /// </summary>
+        public static string Profile_lbl1 {
+            get {
+                return ResourceManager.GetString("Profile_lbl1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 Do you have diabetes? 的當地語系化字串。
+        /// </summary>
+        public static string Profile_lbl10 {
+            get {
+                return ResourceManager.GetString("Profile_lbl10", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 Height 的當地語系化字串。
+        /// </summary>
+        public static string Profile_lbl2 {
+            get {
+                return ResourceManager.GetString("Profile_lbl2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 Weight 的當地語系化字串。
+        /// </summary>
+        public static string Profile_lbl3 {
+            get {
+                return ResourceManager.GetString("Profile_lbl3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 Systolic Blood pressure 的當地語系化字串。
+        /// </summary>
+        public static string Profile_lbl4 {
+            get {
+                return ResourceManager.GetString("Profile_lbl4", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 Dialostic Blood pressure 的當地語系化字串。
+        /// </summary>
+        public static string Profile_lbl5 {
+            get {
+                return ResourceManager.GetString("Profile_lbl5", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 Cholesterol level 的當地語系化字串。
+        /// </summary>
+        public static string Profile_lbl6 {
+            get {
+                return ResourceManager.GetString("Profile_lbl6", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 HDL level 的當地語系化字串。
+        /// </summary>
+        public static string Profile_lbl7 {
+            get {
+                return ResourceManager.GetString("Profile_lbl7", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 Gender 的當地語系化字串。
+        /// </summary>
+        public static string Profile_lbl8 {
+            get {
+                return ResourceManager.GetString("Profile_lbl8", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 Are you a smoker? 的當地語系化字串。
+        /// </summary>
+        public static string Profile_lbl9 {
+            get {
+                return ResourceManager.GetString("Profile_lbl9", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 dismiss 的當地語系化字串。
+        /// </summary>
+        public static string Profile_leave_wo_submit_btn {
+            get {
+                return ResourceManager.GetString("Profile_leave_wo_submit_btn", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 Please fill in all your personal data before leaving 的當地語系化字串。
+        /// </summary>
+        public static string Profile_leave_wo_submit_caption {
+            get {
+                return ResourceManager.GetString("Profile_leave_wo_submit_caption", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 Warning 的當地語系化字串。
+        /// </summary>
+        public static string Profile_leave_wo_submit_title {
+            get {
+                return ResourceManager.GetString("Profile_leave_wo_submit_title", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 ---Choose an item--- 的當地語系化字串。
+        /// </summary>
+        public static string Profile_PickerOption_0 {
+            get {
+                return ResourceManager.GetString("Profile_PickerOption_0", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 Male 的當地語系化字串。
+        /// </summary>
+        public static string Profile_PickerOption_1 {
+            get {
+                return ResourceManager.GetString("Profile_PickerOption_1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 Female 的當地語系化字串。
+        /// </summary>
+        public static string Profile_PickerOption_2 {
+            get {
+                return ResourceManager.GetString("Profile_PickerOption_2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 Yes 的當地語系化字串。
+        /// </summary>
+        public static string Profile_PickerOption_3 {
+            get {
+                return ResourceManager.GetString("Profile_PickerOption_3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 No 的當地語系化字串。
+        /// </summary>
+        public static string Profile_PickerOption_4 {
+            get {
+                return ResourceManager.GetString("Profile_PickerOption_4", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 Height in cm 的當地語系化字串。
+        /// </summary>
+        public static string Profile_TB1 {
+            get {
+                return ResourceManager.GetString("Profile_TB1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 Weight in kg 的當地語系化字串。
+        /// </summary>
+        public static string Profile_TB2 {
+            get {
+                return ResourceManager.GetString("Profile_TB2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 sys. blood pressure in mmHg 的當地語系化字串。
+        /// </summary>
+        public static string Profile_TB3 {
+            get {
+                return ResourceManager.GetString("Profile_TB3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 Dia. blood pressure in mmHg 的當地語系化字串。
+        /// </summary>
+        public static string Profile_TB4 {
+            get {
+                return ResourceManager.GetString("Profile_TB4", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 Cholesterol Level in mg/dL 的當地語系化字串。
+        /// </summary>
+        public static string Profile_TB5 {
+            get {
+                return ResourceManager.GetString("Profile_TB5", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 HDL Level in mg/dL 的當地語系化字串。
+        /// </summary>
+        public static string Profile_TB6 {
+            get {
+                return ResourceManager.GetString("Profile_TB6", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 User Profile 的當地語系化字串。
+        /// </summary>
+        public static string Profile_Title {
+            get {
+                return ResourceManager.GetString("Profile_Title", resourceCulture);
             }
         }
     }

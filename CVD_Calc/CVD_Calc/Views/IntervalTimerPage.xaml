@@ -1,7 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="CVD_Calc.Views.IntervalTimerPage" Title="Interval Timer">
+             xmlns:i18n="clr-namespace:CVD_Calc.Views"
+             x:Class="CVD_Calc.Views.IntervalTimerPage" Title="{i18n:Translate _IntervalTimer_Title}">
 
     <ScrollView>
         <RelativeLayout>

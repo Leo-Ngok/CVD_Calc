@@ -1286,11 +1286,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\patrickn\\CVD_Calc\\CVD_Calc\\CVD_Calc.Android\\CVD_Calc.Android.csproj",
+      "projectUniqueName": "D:\\github\\cvdcalc\\CVD_Calc\\CVD_Calc\\CVD_Calc.Android\\CVD_Calc.Android.csproj",
       "projectName": "CVD_Calc.Android",
-      "projectPath": "C:\\Users\\patrickn\\CVD_Calc\\CVD_Calc\\CVD_Calc.Android\\CVD_Calc.Android.csproj",
+      "projectPath": "D:\\github\\cvdcalc\\CVD_Calc\\CVD_Calc\\CVD_Calc.Android\\CVD_Calc.Android.csproj",
       "packagesPath": "C:\\Users\\patrickn\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\patrickn\\CVD_Calc\\CVD_Calc\\CVD_Calc.Android\\obj\\",
+      "outputPath": "D:\\github\\cvdcalc\\CVD_Calc\\CVD_Calc\\CVD_Calc.Android\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "configFilePaths": [
@@ -1307,8 +1307,8 @@
       "frameworks": {
         "monoandroid81": {
           "projectReferences": {
-            "C:\\Users\\patrickn\\CVD_Calc\\CVD_Calc\\CVD_Calc\\CVD_Calc.csproj": {
-              "projectPath": "C:\\Users\\patrickn\\CVD_Calc\\CVD_Calc\\CVD_Calc\\CVD_Calc.csproj"
+            "D:\\github\\cvdcalc\\CVD_Calc\\CVD_Calc\\CVD_Calc\\CVD_Calc.csproj": {
+              "projectPath": "D:\\github\\cvdcalc\\CVD_Calc\\CVD_Calc\\CVD_Calc\\CVD_Calc.csproj"
             }
           }
         }

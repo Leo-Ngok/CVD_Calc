@@ -782,11 +782,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\patrickn\\CVD_Calc\\CVD_Calc\\CVD_Calc\\CVD_Calc.csproj",
+      "projectUniqueName": "D:\\github\\cvdcalc\\CVD_Calc\\CVD_Calc\\CVD_Calc\\CVD_Calc.csproj",
       "projectName": "CVD_Calc",
-      "projectPath": "C:\\Users\\patrickn\\CVD_Calc\\CVD_Calc\\CVD_Calc\\CVD_Calc.csproj",
+      "projectPath": "D:\\github\\cvdcalc\\CVD_Calc\\CVD_Calc\\CVD_Calc\\CVD_Calc.csproj",
       "packagesPath": "C:\\Users\\patrickn\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\patrickn\\CVD_Calc\\CVD_Calc\\CVD_Calc\\obj\\",
+      "outputPath": "D:\\github\\cvdcalc\\CVD_Calc\\CVD_Calc\\CVD_Calc\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

@@ -23,11 +23,14 @@ namespace CVD_Calc.ViewModels
         {
             get
             {
-                var aqdata = new SQLiteConnection(App.everydayinfo);
-                if (aqdata.Table<weatherkey>().ToList().Count == 0) return 0;
-                double currentcvd = aqdata.Table<weatherkey>().ToList().Last().CVD_idx;
-                currentcvd = Math.Round(currentcvd * 10000) / 100;
-                return currentcvd;
+                using (SQLiteConnection aqdata = new SQLiteConnection(App.everydayinfo))
+                {
+                    aqdata.CreateTable<weatherkey>();
+                    if (aqdata.Table<weatherkey>().ToList().Count == 0) return 0;
+                    double currentcvd = aqdata.Table<weatherkey>().ToList().Last().CVD_idx;
+                    currentcvd = Math.Round(currentcvd * 10000) / 100;
+                    return currentcvd;
+                }                
             }
         }
         public bool lowcvd { get => showlowcvd; }
@@ -35,7 +38,7 @@ namespace CVD_Calc.ViewModels
         {
             get
             {
-                if (seevd < 10) return true;
+                if (seevd>0 && seevd < 10) return true;
                 else return false;
             }
         }
@@ -71,11 +74,14 @@ namespace CVD_Calc.ViewModels
             {
                 if (uptempalert) return false;
                 if (downtempalert) return false;
-                var aqdata = new SQLiteConnection(App.everydayinfo);
-                if (aqdata.Table<weatherkey>().ToList().Count == 0) return false;
-                double currentaqi = aqdata.Table<weatherkey>().ToList().Last().AQI_idx;
-                if (currentaqi <= 100) return true;
-                else return false;
+                using (SQLiteConnection aqdata = new SQLiteConnection(App.everydayinfo))
+                {
+                    aqdata.CreateTable<weatherkey>();
+                    if (aqdata.Table<weatherkey>().ToList().Count == 0) return false;
+                    double currentaqi = aqdata.Table<weatherkey>().ToList().Last().AQI_idx;
+                    if (currentaqi <= 100) return true;
+                    else return false;
+                }
             }
         }
         public static bool notsuitaq
@@ -84,11 +90,14 @@ namespace CVD_Calc.ViewModels
             {
                 if (uptempalert) return false;
                 if (downtempalert) return false;
-                var aqdata = new SQLiteConnection(App.everydayinfo);
-                if (aqdata.Table<weatherkey>().ToList().Count == 0) return false;
-                double currentaqi = aqdata.Table<weatherkey>().ToList().Last().AQI_idx;
-                if (currentaqi > 100 && currentaqi <= 200) return true;
-                else return false;
+                using (SQLiteConnection aqdata = new SQLiteConnection(App.everydayinfo))
+                {
+                    aqdata.CreateTable<weatherkey>();
+                    if (aqdata.Table<weatherkey>().ToList().Count == 0) return false;
+                    double currentaqi = aqdata.Table<weatherkey>().ToList().Last().AQI_idx;
+                    if (currentaqi > 100 && currentaqi <= 200) return true;
+                    else return false;
+                }                    
             }
         }
         public static bool badaq
@@ -97,37 +106,47 @@ namespace CVD_Calc.ViewModels
             {
                 if (uptempalert) return false;
                 if (downtempalert) return false;
-                var aqdata = new SQLiteConnection(App.everydayinfo);
-                if (aqdata.Table<weatherkey>().ToList().Count == 0) return false;
-                double currentaqi = aqdata.Table<weatherkey>().ToList().Last().AQI_idx;
-                if (currentaqi >= 200) return true;
-                else return false;
+                using (SQLiteConnection aqdata = new SQLiteConnection(App.everydayinfo))
+                {
+                    aqdata.CreateTable<weatherkey>();
+                    if (aqdata.Table<weatherkey>().ToList().Count == 0) return false;
+                    double currentaqi = aqdata.Table<weatherkey>().ToList().Last().AQI_idx;
+                    if (currentaqi >= 200) return true;
+                    else return false;
+                }                    
             }
         }
         public static bool uptempalert
         {
             get
             {
-                var aqdata = new SQLiteConnection(App.everydayinfo);
-                if (aqdata.Table<weatherkey>().ToList().Count == 0) return false;
-                double futureaqi = aqdata.Table<weatherkey>().ToList().Last().futuretemp;
-                if (futureaqi <= 28) return false;
-                double currenttemp = aqdata.Table<weatherkey>().ToList().Last().todaytemp;
-                if ((futureaqi - currenttemp) >= 5) return true;
-                else return false;
+                using (SQLiteConnection aqdata = new SQLiteConnection(App.everydayinfo))
+                {
+                    aqdata.CreateTable<weatherkey>();
+                    if (aqdata.Table<weatherkey>().ToList().Count == 0) return false;
+                    double futureaqi = aqdata.Table<weatherkey>().ToList().Last().futuretemp;
+                    if (futureaqi <= 28) return false;
+                    double currenttemp = aqdata.Table<weatherkey>().ToList().Last().todaytemp;
+                    if ((futureaqi - currenttemp) >= 5) return true;
+                    else return false;
+                }               
             }
         }
         public static bool downtempalert
         {
             get
             {
-                var aqdata = new SQLiteConnection(App.everydayinfo);
-                if (aqdata.Table<weatherkey>().ToList().Count == 0) return false;
-                double futureaqi = aqdata.Table<weatherkey>().ToList().Last().futuretemp;
-                if (futureaqi >= 15) return false;
-                double currenttemp = aqdata.Table<weatherkey>().ToList().Last().todaytemp;
-                if ((futureaqi - currenttemp) <= -5) return true;
-                else return false;
+                using (SQLiteConnection aqdata = new SQLiteConnection(App.everydayinfo))
+                {
+                    aqdata.CreateTable<weatherkey>();
+                    if (aqdata.Table<weatherkey>().ToList().Count == 0) return false;
+                    double futureaqi = aqdata.Table<weatherkey>().ToList().Last().futuretemp;
+                    if (futureaqi >= 15) return false;
+                    double currenttemp = aqdata.Table<weatherkey>().ToList().Last().todaytemp;
+                    if ((futureaqi - currenttemp) <= -5) return true;
+                    else return false;
+                }
+                   
             }
         }
     }

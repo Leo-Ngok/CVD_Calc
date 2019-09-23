@@ -3,7 +3,8 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="CVD_Calc.Views.AboutPage"
              xmlns:vm="clr-namespace:CVD_Calc.ViewModels"
-             Title="{Binding Title}">
+             xmlns:i18n="clr-namespace:CVD_Calc.Views"
+             Title="{i18n:Translate AboutPageTitle}">
     <ContentPage.BindingContext>
         <vm:AboutViewModel />
     </ContentPage.BindingContext>
@@ -34,9 +35,9 @@
                     <Label.FormattedText>
                         <FormattedString>
                             <FormattedString.Spans>
-                                <Span Text="CVD risk index calculator" FontAttributes="Bold" FontSize="16" />
-                                <Span Text=" " />
-                                <Span Text="2.0.9" ForegroundColor="{StaticResource LightTextColor}" />
+                                <Span Text="" FontAttributes="Bold" FontSize="16" />
+                                <Span Text="{i18n:Translate AboutPageText1}" />
+                                <Span Text=" 2.0.9" ForegroundColor="{StaticResource LightTextColor}" />
                             </FormattedString.Spans>
                         </FormattedString>
                     </Label.FormattedText>
@@ -45,15 +46,15 @@
                     <Label.FormattedText>
                         <FormattedString>
                             <FormattedString.Spans>
-                                <Span Text="This app is for reference only, " />
-                                <Span Text="NOT" FontAttributes="Bold"/>
-                                <Span Text=" a substitution for the advice of a medical professional"/>
-                                <Span Text="For more information, please visit "/>
-                                <Span Text="our project on github" FontAttributes="Italic" 
+                                <Span Text="{i18n:Translate AboutPageText2}" />
+                                <Span Text="{i18n:Translate AboutPageText3}" FontAttributes="Bold"/>
+                                <Span Text="{i18n:Translate AboutPageText4}"/>
+                                <Span Text="{i18n:Translate AboutPageText5}"/>
+                                <Span Text="{i18n:Translate AboutPageText6}" FontAttributes="Italic" 
                                       TextDecorations="Underline">
                                     <Span.GestureRecognizers>
                                         <TapGestureRecognizer Command="{Binding ClickCommand}"
-                                                              CommandParameter="https://github.com/Leo-Ngok/isweep_proj_v1.2"/>
+                                                              CommandParameter="https://github.com/Leo-Ngok/CVD_Calc"/>
                                     </Span.GestureRecognizers>
                                 </Span>
 
@@ -65,9 +66,9 @@
                     <Label.FormattedText>
                         <FormattedString>
                             <FormattedString.Spans>
-                                <Span Text="Feel free to give any feedback and recommendations." />
+                                <Span Text="{i18n:Translate AboutPageText7}" />
                                 <Span Text=" " />
-                                <Span Text="Press me " FontAttributes="Bold" TextDecorations="Underline">
+                                <Span Text="{i18n:Translate AboutPageText8}" FontAttributes="Bold" TextDecorations="Underline">
                                     <Span.GestureRecognizers>
                                         <TapGestureRecognizer Command="{Binding ClickCommand}"
                                                               
@@ -76,7 +77,7 @@
                                 </Span>
 
                                 <Span Text=" " />
-                                <Span Text="for more details." />
+                                <Span Text="{i18n:Translate AboutPageText9}" />
                             </FormattedString.Spans>
                         </FormattedString>
                     </Label.FormattedText>
